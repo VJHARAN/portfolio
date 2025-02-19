@@ -98,3 +98,34 @@ padding:8px 30px;
 border-radius:10px;
 font-weight: bold;
 }
+
+#main-p{
+    text-align: center;
+    font-size: 36px;
+    color:#1f2937;
+    font-weight: 900;
+    margin:60px 0px;
+}
+
+ .main-content{
+    display: flex;
+    justify-content: center;
+    gap:80px;
+    margin:80px 0px;
+    
+}
+
+.contentbox div{
+    border:5px solid #3882f6;
+    width:200px;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom:10px;
+}
+
+.contentbox{
+    width:200px
+}
+.contentbox p{
+    text-align: center;
+}
