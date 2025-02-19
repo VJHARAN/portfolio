@@ -1,2 +1,2 @@
-# The_Landing_-Page
+# The_Landing_Page
 An entire  standalone web page,
