@@ -64,7 +64,6 @@ section.hero{
     display:flex; 
     justify-content: space-between;
     gap:80px;   
-     
 }
 
 .hero-main,.hero-img{       
