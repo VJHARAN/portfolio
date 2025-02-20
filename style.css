@@ -32,7 +32,7 @@ header, footer{
     display:flex;
     justify-content: space-between;
     margin-bottom:150px;
-    border-bottom: 5px solid rgb(55, 255, 37);
+    border-bottom: 5px solid #37ff25;
     padding:20px 30px;
     border-radius: 35px;
     align-items: center;
@@ -128,19 +128,11 @@ font-size:20px;
  
 }
 
-#button1:link,input#button2:link
-{
-     background-color: #13ff91;
-}
-
-#button1:visited, input#button2:visited{
-    background-color: #ffac13;
-}
-
+ 
 #button1:hover, input#button2:hover{
    color: rgb(1, 1, 1);
- 
 }
+
 #main-about{
  background-color: #e5e7eb; 
  padding:40px 0  80px;  
@@ -283,4 +275,11 @@ footer div{
     gap:10px;
 }
 
- 
+#footer {
+    font-weight: bolder;
+    margin:10px;
+}
+
+#footer:hover{
+    color:#37ff25;
+}
