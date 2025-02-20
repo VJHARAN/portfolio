@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon"            href="./images/icon.png"/>
+        <link rel="icon"            href="./images/logo.png"/>
       
     
         <link rel="stylesheet" href="style.css">
@@ -11,19 +11,26 @@
     </head>
     <body>
         <header class="header">
+            <!-- NAVIGATION -->
             <nav class="navigation">
+                
                 <h2 id="header-logo">അരിങ്coder</h2>
+                  
                 <ul class="header-link">
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Register</a></li>
-                    <li><a href="">About</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#main-p">Technologies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+
                 </ul>
             </nav>
+
+            <!-- HERO SECTION -->
             <section class="hero">
                 <div  class="hero-main">
-                    <p id="hero-maintext">This website is awesome</p>
-                    <p id="hero-secondary">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-                    <input id="button" type="button" value="Sign up" >
+                    <p id="hero-maintext">FRONT-END DEVELOPER</p>
+                    <p id="hero-secondary"> I'm Haran <br>  <span>web developer</span> with a passion for creating responsive and beautiful websites.</p>
+                    <a href="https://vjharan.github.io/HTML_CSS_projects/"> <input id="button" type="button" value="View my work" ></a>
                 </div>
 
                 <div class="hero-img">
@@ -34,6 +41,7 @@
         </header>
 
         <main class="main">
+            <!-- #WEB TECH & PROG. LANGS -->
             <section class="main-section1">
                     <p id="main-p">Web Technologies & Programming Languages<p>
                     <div class="main-content">
@@ -51,8 +59,15 @@
                                 <img src="./images/js.png" alt="java script">                                 
                                 <p>JavaScript is a programming language used to create dynamic content for websites</p>
                             </div>    
+                            <div class="contentbox">                                
+                                <img src="./images/git.png" alt="java script">                                 
+                                <p>
+                                    Git is a distributed version control system that tracks versions of files</p>
+                            </div> 
                     </div>
             </section>
+
+            <!-- TESTIMONIALS -->
             <section class="main-section2" >
                 <div class="testimonial">
                     <div>
@@ -62,26 +77,33 @@
                     <div>
                         <p id="quote">“The art of programming is the art of organizing complexity, of mastering multitude and avoiding its bastard chaos as effectively as possible.”  </p>
                         <p id="author">— Edsger W. Dijkstra</p>
-                    </div>
-                    
+                    </div>                
                 </div>
-         
+            </section>
+
+            <!-- CTA SECTION -->
+            <section>
+                    <div class="cta" id="contact">
+                        <div>
+                            <h2> Drop your feedback for Haran's projects </h2>
+                            <p> by clicking that button on the right!</p>
+                        </div>
+                        <a href="http://linkedin.com/in/haranvj/" target="_blank">
+                            <input type="button" id="button2" value="Get in touch">
+                        </a>
+                        
+                    </div>
             </section>
         </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
+        <footer id="about">
+            <a href="./index.html">
+                <div>
+                    <p>Copyright &copy;  All Rights Reserved</p>
+                    <p>AringCoder &copy; 2025 </p>
+                </div>
+            </a>
+        </footer>
+  
     </body>
 </html>
