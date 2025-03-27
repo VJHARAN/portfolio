@@ -2,6 +2,8 @@
 
 <h3>Description</h3>
 <p> This is my  portfolio webpage<br>
+
+<h3>To View demo: <a href="https://vjharan.github.io/portfolio/">click here</a></h3>
     
 <h3>Features</h3>
 <p>
@@ -11,9 +13,6 @@
     ⚡️ Valid HTML5 & CSS3 <br>
     ⚡️ Well organized documentation <br>
 </p>
-
-
-<h3>To View the demo: <a href="https://vjharan.github.io/portfolio/">click here</a></h3>
 
 <h3>Technologies used</h3>
 <ul>
