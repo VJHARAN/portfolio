@@ -7,7 +7,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="style.css">
         <title>Haran's portfolio</title>
     </head>
@@ -19,10 +20,10 @@
                 <h2 id="header-logo">HARAN</h2>
                   
                 <ul class="header-link">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#main-p">Technologies</a></li>
-                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#about">About</a></li>
+                    
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="">Resume</a></li>
 
                 </ul>
             </nav>
@@ -30,98 +31,80 @@
             <!-- HERO SECTION -->
             <section class="hero">
                 <div  class="hero-main">
-                   
-                    <p id="hero-maintext">Hi, I'm Haran <br>
+                    <p id="hero-maintext">Hi, I'm Haran V J <br>
                         <span>Frontend Developer</span></p>
                     <p id="hero-secondary">   an aspiring web developer with a passion for creating responsive and beautiful websites.</p>
-                    <a  href="https://vjharan.github.io/Frontend_projects/"> <input id="button1" type="button" value="View my work" ></a>
+                   
+                    <button class="btn">
+                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                        </svg>
+                        <span>View my work</span>
+                    </button>
+                     
                 </div>
 
                 <div class="hero-img">
-                
-                    <img src="./images/hero-img.jpg" alt="this is a place holder for an image">
+                    <img src="./images/hero-img.jpg" alt="image">
                 </div>
             </section>
         </header>
 
         <main class="main">
             <!-- About -->
-            <section id="main-about">
+            <section class="about-section">
                 <div id="about">
                     <h2>About Me</h2>
-                    
                     <p id="details">
-                        I am a fresher, B.tech Computer Science Engineering graduate, actively looking for a
-                        Front-end Developer position. I have an intermediate knowledge in Python programming. I am a
-                        hardworking & detail oriented self-learner. <br><br>
-                        I am a self-taught person undergoing an online open-source fullstack
-                        developer curriculum offered by the OdinProject, wherein I have covered HTML and CSS
-                        foundations, and is looking forward to learn Javascript, and React library. After I feel confident
-                        with the front-end, I have decided to learn the Django backend framework and MySQL.
+                        I am a fresher, B.tech Computer Science Engineering graduate, actively looking for a Web Developer position. <br><br>
+                        I am a self-taught individual undergoing an online open-source fullstack developer curriculum offered by the OdinProject, wherein I have covered <strong>HTML, CSS & JavaScript</strong> fundamentals, and is looking forward to learn Fullstack JavaScript with backend on top of NodeJS. &nbsp;
+                        I have an intermediate knowledge in <strong>Python</strong> programming. I am a hardworking & detail oriented self-learner.
                     </p>
                 </div>
-             
-            </section>
-              
-            
-            <!-- #WEB TECH & PROG. LANGS -->
-            <section class="main-section1">
-                    <p id="main-p">Web Technologies & Programming Languages<p>
-                    <div class="main-content">
-                            <div class="contentbox" >
-                                <img src="./images/python.png" alt="python">                             
-                                <p>Python is a high-level, general-purpose programming language. </p>
-                            </div>                            
-                            <div class="contentbox">                                
-                                <img src="./images/html5.png" alt="html5">                                 
-                                <p>HTML is the standard markup language for Web pages.</p>                            </div>
-                            <div class="contentbox">                                
-                                <img src="./images/css3.png" alt="css3">                               
-                                <p>CSS is a stylesheet language that is used to make web pages more attractive and user-friendly</p>                            </div>    
-                            <div class="contentbox">                                
-                                <img src="./images/js.png" alt="java script">                                 
-                                <p>JavaScript is a programming language used to create dynamic content for websites</p>
-                            </div>    
-                            <div class="contentbox">                                
-                                <img src="./images/git.png" alt="java script">                                 
-                                <p>
-                                    Git is a distributed version control system that tracks versions of files</p>
-                            </div> 
-                    </div>
-            </section>
 
-            <!-- TESTIMONIALS -->
-            <section class="main-section2" >
-                <div class="testimonial">
-                    <div>
-                        <p id="quote">“Code is like humor. When you have to explain it, it’s bad.” </p>
-                        <p id="author">– Cory House</p>
+                <div id="tech-stack">
+                    <p id="main-p">Tech Stack & Skills<p>
+                    <div class="main-content">
+                        <figure>
+                            <img src="./images/python.png" alt="python">         
+                            <figcaption>Python</figcaption>
+                        </figure>
+
+                        <figure>
+                            <img src="./images/html5.png" alt="html">                                 
+                            <figcaption>HTML</figcaption>
+                        </figure>                  
+                                                
+                        <figure>
+                                <img src="./images/css3.png" alt="css">          
+                                <figcaption>CSS</figcaption>     
+                        </figure>                
+                        <figure>
+                            <img src="./images/js.png" alt="javascript">                                 
+                            <figcaption>JavaScript</figcaption>
+                        </figure>            
+                        <figure>
+                                <img src="./images/git.png" alt="java script">  
+                                <figcaption>Git</figcaption>                             
+                        </figure>                  
                     </div>
-                    <div>
-                        <p id="quote">“The art of programming is the art of organizing complexity, of mastering multitude and avoiding its bastard chaos as effectively as possible.”  </p>
-                        <p id="author">— Edsger W. Dijkstra</p>
-                    </div>                
-                </div>
+               </div>
+                    
             </section>
 
             <!-- CTA SECTION -->
             <section>
                     <div class="cta" id="contact">
-                        <div class="cta-innerdiv">
-                            <h2> Drop your feedback for Haran's projects </h2>
-                            <p> by clicking that button on the right!</p>
-                            <div>
-                                <h2> Contact:</h2>
-                                <ul>
-                                    <li> Email: haranvj1997@gmail.com</li>
-                                    <li>Github: github.com/VJHARAN</li>
-                                    <li>LinkedIn : linkedin.com/in/haranvj</li>
-                                </ul>
-                            </div>
+                        <div class="connect-text">
+                            <h2>Connect with me!</h2>   
                         </div>
-                        <a href="http://linkedin.com/in/haranvj/" target="_blank">
-                            <input id="button2" type="button"  value="Get in touch">
-                        </a>
+                        <div class="connect">
+                            <a href="mailto:haranvj1997@gmail.com"><button class="connect-btn btn-1 btn-sep icon-mail">Gmail </button></a>
+                            <a href="https://linkedin.com/in/haranvj/" target="_blank"><button class="connect-btn btn-2 btn-sep icon-linkedin">LinkedIn</button></a>
+                            <a href="https://github.com/VJHARAN/"><button class="connect-btn btn-3 btn-sep icon-github">Github</button></a>
+                        </div>
+                        
                         
                     </div>
             </section>
@@ -129,9 +112,8 @@
         
         <footer >    
                 <div>
-                    <p>Copyright &copy; 2025  </p>
+                    <p>&copy; 2025 - Haran V J </p>
                     <p>All Rights Reserved</p>
-                    <a href="#home" id="footer">Home</a>
                 </div>
                
         </footer>

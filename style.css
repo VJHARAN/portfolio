@@ -2,7 +2,7 @@ body{
     box-sizing: border-box;
     margin:0;
     padding:0;
-    
+    background-color: #1f2937;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -45,7 +45,7 @@ header, footer{
     color: #f9faf8; 
 }
 
-.header-link a, #hero-secondary, .hero-img, #button1{
+.header-link a, #hero-secondary, .hero-img{
     font-size: 20px;
     color:#e5e7eb;
     
@@ -81,10 +81,12 @@ section.hero{
     row-gap: 20px;
 }
 
-.main-section1{
-    background-color: #1f2937;
+.about-section{
+    background-color: #002a37f0;
     color: white;
     padding:40px;
+    margin:0px 180px 0px;;
+    border-radius: 20px;
 }
  
 #hero-maintext{
@@ -119,20 +121,6 @@ img{
     border: 4px double white;
 }
 
-#button1, #button2{
-background-color: #3882f6;
-padding:8px 30px;
-border-radius:10px;
-font-weight: bold;
-font-size:20px;
- 
-}
-
- 
-#button1:hover, input#button2:hover{
-   color: rgb(1, 1, 1);
-}
-
 #main-about{
  background-color: #e5e7eb; 
  padding:40px 0  80px;  
@@ -141,14 +129,13 @@ font-size:20px;
 #about{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     
-    width: 720px;
-    margin:auto;
+    margin:0px;
 }
 #about h2{
     font-size:36px;
-    margin:40px;
+    margin-bottom:20px ;
 }
 
 #details{
@@ -156,39 +143,41 @@ font-size:20px;
     font-size: 20px;
 }
 #main-p{
-    text-align: center;
+    text-align: left;
     font-size: 36px;
     color:#ffffff;
     font-weight: 900;
-    margin:60px 0px;
+    margin:60px 0px 30px;
 }
 
 .main-content{
     display: flex;
     justify-content: center;
-    gap:80px;
-    margin:80px 0px 120px;
+    gap:20px;
+    margin:20px 0px 20px;
     
 }
- 
+
+figure img{
+    border:5px solid blue;
+    border-radius:15px ;
+    height:170px;
+    padding:3px;
+    margin-bottom: 10px;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 20px;
+}
 .contentbox{
     width:200px;
     display:flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
-.contentbox p{
-    text-align: center;
-}
-
-.contentbox  img{
-    border:5px solid blue;
-    border-radius:15px ;
-    height:200px;
-    padding:3px;
-    margin-bottom: 10px;
-}
  
 .main-section2{
     display: flex;
@@ -198,74 +187,33 @@ font-size:20px;
     padding:150px 0px;
 }
 
-.testimonial{    
-    display: flex;
-    flex-direction: column;
-    gap:40px;
-    color:#1f2937;
-    justify-content: center;
-    align-items: center;
-    width: 700px;
-}
+ 
 
-#quote{    
-    font-size: 36px;
-    font-style: italic;   
-    text-align: justify;
-}
 
-#author{
-font-size: 36px;
-font-weight: bold;
-}
 
-.testimonial p{
-    display: flex;
-    justify-content: flex-end;
-}
+ 
 .cta
 {
-    background-color: #3882f6;
+    background-color: #002a37f0;
     color:white;
-    margin:  100px 250px ; 
+    margin:  100px 180px 10px ; 
     padding:50px 200px;
     border-radius: 15px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items:center ;
+    justify-content: space-evenly;
     
 }
 
-.cta h2{
-    margin:0 0 10px;
+ 
 
-}
+.cta div.connect{
+     display:flex;
 
-.cta-innerdiv{
-    display: flex;
-    flex-direction: column;
-}
+      
+} 
 
-.cta-innerdiv ul{
-    list-style-type: none;
-    margin:0;
-    padding:10;
-    line-height: 1.6;
-    font-size: 20px;
-}
 
-.cta p{
-    margin-bottom: 20px;
-}
-.cta #button2   {
-    border:3px solid white;
-    color:white;
-    padding:10px 40px;
-    border-radius: 10px;
-    background-color: #3882f6;
-    font-size:20px;
-    font-weight: bolder;
-}
 
 footer div{
     padding:40px;
@@ -287,3 +235,189 @@ footer div{
  .header a:hover{
     color:#37ff25;
 }
+
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position:absolute;
+    left: 350px;
+    top: 482px;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 0.5s ease-in-out;
+    background: #4496e8;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+
+
+
+  .connect-btn {
+    border: none;
+  
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+     
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .connect-btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  /* Pseudo elements for icons */
+  .connect-btn:before {
+    font-family: 'FontAwesome';
+     
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /* Icon separator */
+  .btn-sep {
+    padding: 25px 60px 25px 120px;
+  }
+  
+  .btn-sep:before {
+    background: rgba(0,0,0,0.15);
+  }
+  
+  /* Button 1 */
+  .btn-1 {
+  
+    background: #e74c3c;
+    color: #fff;
+  }
+  
+  .btn-1:hover {
+   
+    background: #c0392b;
+  }
+  
+  .btn-1:active {
+  
+    background: #c0392b;
+    top: 2px;
+  }
+  
+  .btn-1:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+  
+  /* Button 2 */
+  .btn-2 {
+    background: #3498db;
+    color: #fff;
+  }
+  
+  .btn-2:hover {
+    background: #2980b9;
+  }
+  
+  .btn-2:active {
+    background: #2980b9;
+    top: 2px;
+  }
+  
+  .btn-2:before {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    line-height: 3;
+    font-size: 140%;
+    width: 60px;
+  }
+
+    /* Button 3 */
+    .btn-3 {
+        background: #11ad52;
+        color: #fff;
+      }
+      
+      .btn-3:hover {
+        background: #0a7e3a;
+      }
+      
+      .btn-3:active {
+        background: #27ae60;
+        top: 2px;
+      }
+      
+      .btn-3:before {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        line-height: 3;
+        font-size: 140%;
+        width: 60px;
+      }
+ 
+  /* Icons */
+  
+  .icon-mail:before {
+    content: "\f003";
+  }
+  
+  .icon-linkedin:before {
+    content: "\f08c";
+  }
+  
+  .icon-github:before {
+    content: "\f092";
+  }
+  
+ 
