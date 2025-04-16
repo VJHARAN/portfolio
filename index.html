@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400..700&family=Genos:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Revalia&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Haran's portfolio</title>
     </head>
@@ -17,29 +18,30 @@
             <!-- NAVIGATION -->
             <nav class="navigation">
                 
-                <h2 id="header-logo">HARAN</h2>
+               <div id="name">
+                    <h2 id="header-logo">Haran</h2>
+               </div>
                   
-                <ul class="header-link">
-                    <li><a href="#about">About</a></li>
-                    
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="">Resume</a></li>
-
-                </ul>
+                <div id="nav-link">
+                    <ul class="header-link">
+                        <li><a href="#main">About</a></li>
+                        
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://drive.google.com/file/d/1aucHGGNtz-rE9Z5vzBgnj5h2zkz3Jj21/view?usp=sharing" target="_blank">Resume</a></li>
+    
+                    </ul>
+                </div>
             </nav>
 
             <!-- HERO SECTION -->
             <section class="hero">
                 <div  class="hero-main">
-                    <p id="hero-maintext">Hi, I'm Haran V J <br>
-                        <span>Frontend Developer</span></p>
-                    <p id="hero-secondary">   an aspiring web developer with a passion for creating responsive and beautiful websites.</p>
+                    <p id="hero-maintext">Hi, I'm Haran V J </p>
+                    
+                    
+                    <p id="hero-secondary">   an aspiring frontend developer with a passion for creating responsive and beautiful websites.</p>
                    
                     <button class="btn">
-                        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                        </svg>
                         <span>View my work</span>
                     </button>
                      
@@ -51,7 +53,7 @@
             </section>
         </header>
 
-        <main class="main">
+        <main class="main" id="main">
             <!-- About -->
             <section class="about-section">
                 <div id="about">
@@ -66,10 +68,6 @@
                 <div id="tech-stack">
                     <p id="main-p">Tech Stack & Skills<p>
                     <div class="main-content">
-                        <figure>
-                            <img src="./images/python.png" alt="python">         
-                            <figcaption>Python</figcaption>
-                        </figure>
 
                         <figure>
                             <img src="./images/html5.png" alt="html">                                 
@@ -84,6 +82,12 @@
                             <img src="./images/js.png" alt="javascript">                                 
                             <figcaption>JavaScript</figcaption>
                         </figure>            
+
+                        <figure>
+                            <img src="./images/python.png" alt="python">         
+                            <figcaption>Python</figcaption>
+                        </figure>
+
                         <figure>
                                 <img src="./images/git.png" alt="java script">  
                                 <figcaption>Git</figcaption>                             
@@ -100,7 +104,7 @@
                             <h2>Connect with me!</h2>   
                         </div>
                         <div class="connect">
-                            <a href="mailto:haranvj1997@gmail.com"><button class="connect-btn btn-1 btn-sep icon-mail">Gmail </button></a>
+                            <a href="mailto:haranvjofficial2024@gmail.com"><button class="connect-btn btn-1 btn-sep icon-mail">Gmail </button></a>
                             <a href="https://linkedin.com/in/haranvj/" target="_blank"><button class="connect-btn btn-2 btn-sep icon-linkedin">LinkedIn</button></a>
                             <a href="https://github.com/VJHARAN/"><button class="connect-btn btn-3 btn-sep icon-github">Github</button></a>
                         </div>

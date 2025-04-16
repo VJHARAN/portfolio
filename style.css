@@ -23,53 +23,91 @@ header, footer{
 }
 
 .header{
-    padding:350px; 
+   
+    margin-bottom:200px;
     padding-top: 20px;
-    padding-bottom: 150px; 
+    padding-bottom: 0px; 
 }
 
 .navigation{
+    
     display:flex;
-    justify-content: space-between;
-    margin-bottom:150px;
-    border-bottom: 5px solid #37ff25;
-    padding:20px 30px;
-    border-radius: 35px;
     align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #37ff25;
+    padding:5px 20px;
+     
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    margin-bottom:150px;
+    background-color: #304868;
+    position: fixed;
+    top: 0;
+    width: 97.5%;
+    
 }
  
- 
+
+
 #header-logo   {
-    margin:0;   
-    font-size :40px;
+     margin:5px;
+    margin-left:20px;
+    flex-basis:5%px;
+    font-size :45px;
     color: #f9faf8; 
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight:900;
+    font-style:normal;
 }
 
 .header-link a, #hero-secondary, .hero-img{
     font-size: 20px;
     color:#e5e7eb;
     
+    
 }
 
+#nav-link{
+    display: flex;
+    align-items: center;
+    margin:0px 80px;
+    justify-content: end;
+   
+}
 ul.header-link{
+   
     margin:0;
     padding:0;
     list-style-type:none;
     display: flex;
-    gap:20px;
+    justify-content: flex-end;
+    gap:50px;
 
 }
 
+.header-link li{
+    width: 200px;
+    flex-basis: 10%;
+    margin:0;
+    padding:0;
+}
+
+
 section.hero{
+    margin:160px 200px 30px;
+    
     display:flex; 
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap:80px;   
 }
 
 .hero-main,.hero-img{       
     /* border:2px solid white; */
+    margin:50px;
     width:500px;
     height: 300px;   
+    margin-bottom: 20px ;
 }
 
 .hero-main{
@@ -94,11 +132,15 @@ section.hero{
     font-family: "Poppins", serif;
     font-weight: 800;        
     color: #f9faf8;
-    margin:0;
+    margin-bottom:30px;
     line-height: 0.8;
 }
 
-#hero-maintext span{
+#hero-secondary{
+    margin-bottom:30px;
+}
+
+.hero-main h2{
     font-size: 40px;    
     font-family: "Poppins", serif;
     font-weight: normal;          
@@ -234,6 +276,8 @@ footer div{
 
  .header a:hover{
     color:#37ff25;
+    font-weight: 500;
+     
 }
 
 
@@ -242,30 +286,21 @@ footer div{
     height: 60px;
     cursor: pointer;
     background: transparent;
-    border: 1px solid #91C9FF;
+    border: 2px solid #91C9FF;
     outline: none;
-    transition: 1s ease-in-out;
+    border-radius:20px;
+    padding: 5px 20px;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    border-left: 5px solid #91C9FF;
+    border-top: 5px solid #91C9FF;
+    border-right: 2px solid  #850af0;
+    border-bottom: 2px solid  #850af0;
+   
   }
   
-  svg {
-    position:absolute;
-    left: 350px;
-    top: 482px;
-    fill: none;
-    stroke: #fff;
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 1s ease-in-out;
-  }
-  
-  .btn:hover {
-    transition: 0.5s ease-in-out;
-    background: #4496e8;
-  }
-  
-  .btn:hover svg {
-    stroke-dashoffset: -480;
-  }
+
   
   .btn span {
     color: white;
@@ -273,17 +308,59 @@ footer div{
     font-weight: 700;
   }
 
+  .btn:hover{
+    background-color: #005860f0;
+    transition:  0.2s ease-in-out;
+    border-right: 2px solid  #850af0;
+    border-bottom: 2px solid  #850af0;
+  }
 
+  .btn :before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255,255,255, 0) 30%,
+        rgba(255,255,255, .8),
+        rgba(255,255,255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+}
+
+@keyframes shine {
+    0% {left: -100px}
+    20% {left: 100%}
+    100% {left: 100%}
+}
+
+.btn:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255,255,255, 0) 30%,
+        rgba(255,255,255, .8),
+        rgba(255,255,255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 2.5s infinite linear; /* Animation */
+}
 
 
   .connect-btn {
     border: none;
-  
+    border-radius: 6px;
     font-size: inherit;
     color: inherit;
     background: none;
     cursor: pointer;
-    padding: 25px 80px;
+    padding: 25px 40px;
     display: inline-block;
     margin: 15px 30px;
      
@@ -321,7 +398,7 @@ footer div{
   
   /* Icon separator */
   .btn-sep {
-    padding: 25px 60px 25px 120px;
+    padding: 25px 40px 25px 100px;
   }
   
   .btn-sep:before {
@@ -420,4 +497,4 @@ footer div{
     content: "\f092";
   }
   
- 
+
