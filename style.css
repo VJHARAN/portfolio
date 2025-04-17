@@ -267,17 +267,10 @@ footer div{
     gap:10px;
 }
 
-#footer {
-    font-weight: bolder;
-    margin:10px;
-}
-
-#footer:hover{
-    color:#37ff25;
-}
+ 
 
  .header a:hover{
-    color:#37ff25;
+    color:#3ae52a;
     font-weight: 500;
      
 }
